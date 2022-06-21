@@ -10,12 +10,13 @@ static const char *fonts[] = {
 	"SauceCodePro Nerd Font:style=Medium:size=17"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
-static const char *colors[SchemeLast][2] = {
+#include "/home/ognjen/.cache/wal/colors-wal-dmenu.h"
+//static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel] = { "#eeeeee", "#005577" },
-	[SchemeOut] = { "#000000", "#00ffff" },
-};
+	//[SchemeNorm] = { "#bbbbbb", "#222222" },
+	//[SchemeSel] = { "#eeeeee", "#005577" },
+	//[SchemeOut] = { "#000000", "#00ffff" },
+//};
 
 static const unsigned int alphas[SchemeLast][2] = {
 	[SchemeNorm] = { OPAQUE, alpha },
