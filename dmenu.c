@@ -1,4 +1,5 @@
-/* See LICENSE file for copyright and license details. */
+/* See LICENSE file for copyright and license details.
+ * find EDIT for changing the position */
 #include <ctype.h>
 #include <locale.h>
 #include <stdio.h>
@@ -670,7 +671,7 @@ setup(void)
 		if (centered) {
 			mw = MIN(MAX(max_textw() + promptw, min_width), info[i].width);
 			x = info[i].x_org + ((info[i].width  - mw) / 2);
-			y = info[i].y_org + ((info[i].height - mh) / 2)-400;//edit
+			y = info[i].y_org + ((info[i].height - mh) / 2) - 300; // EDIT: for changing the y position
 		} else {
 			x = info[i].x_org;
 			y = info[i].y_org + (topbar ? 0 : info[i].height - mh);
@@ -688,7 +689,7 @@ setup(void)
 		if (centered) {
 			mw = MIN(MAX(max_textw() + promptw, min_width), wa.width);
 			x = (wa.width  - mw) / 2;
-			y = (wa.height - mh) / 2 - 400;//edit
+			y = (wa.height - mh) / 2 - 300; // EDIT: for changing the y position;
 		} else {
 			x = 0;
 			y = topbar ? 0 : wa.height - mh;
